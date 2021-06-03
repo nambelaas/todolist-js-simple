@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-Check-hover">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="Check-hover" clip-path="url(#clip-Check-hover)">
+    <path id="check" d="M193.757,385.74a25.823,25.823,0,0,1-36.531,0L11.354,239.843a38.734,38.734,0,0,1,0-54.8l18.265-18.27a38.74,38.74,0,0,1,54.8,0l91.072,91.076L421.58,11.76a38.74,38.74,0,0,1,54.8,0l18.265,18.27a38.734,38.734,0,0,1,0,54.8Zm0,0" transform="translate(3 59.594)" fill="#eb5e28"/>
+  </g>
+</svg>

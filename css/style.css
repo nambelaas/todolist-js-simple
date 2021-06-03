@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #ccc5b9;
+}
+
+header {
+	background-color: #252422;
+	padding: 10px;
+	color: #eb5e28;
+	text-align: center;
+	font-weight: 700;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper .container {
+	width: 1024px;
+	border-radius: 8px;
+	margin: 16px;
+	background-color: #252422;
+	padding: 16px;
+	flex-grow: 1;
+	height: fit-content;
+}
+
+.wrapper .container .container-header {
+	color: #fffcf2;
+}
+
+.item {
+	border-radius: 8px;
+	margin-top: 16px;
+	padding: 12px 24px;
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+.item > .inner h2 {
+	margin-bottom: unset;
+}
+.item > .inner p {
+	margin-top: 5px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	border-radius: 16px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	margin-bottom: 6px;
+	font-size: 18px;
+	color: #fffcf2;
+}
+
+.shadow {
+	box-shadow: 0 5px 10px rgba(220, 220, 220, 0.05), 0 0 40px #5f5f5f85;
+}
+
+input[type="text"],
+input[type="date"] {
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #ffffff;
+	border: 2px solid #eb5e28;
+	border-radius: 8px;
+	padding: 15px 0;
+	box-sizing: border-box;
+	margin-bottom: 18px;
+	font-size: 26px;
+	color: #252422;
+}
+
+.btn-submit {
+	width: fit-content;
+	border: none;
+	font-family: "Source Sans Pro", sans-serif;
+	border-radius: 8px;
+	padding: 10px 20px;
+	color: #252422;
+	font-size: 24px;
+	margin-top: 18px;
+	align-self: flex-end;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+	background-color: #eb5e28;
+	color: #fffcf2;
+}
+
+input[type="text"],
+input[type="date"],
+.btn-submit:focus {
+	outline: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-title {
+	margin: auto 0;
+}
+
+.check-button {
+	background: url(../assets/check.svg);
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	margin-left: auto;
+	cursor: pointer;
+	border: none;
+	background-repeat: no-repeat;
+	transition: all 0.7s;
+}
+.check-button:hover {
+	background: url(../assets/check-hover.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.trash-button {
+	background: url(../assets/trash.svg);
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	margin-left: auto;
+	cursor: pointer;
+	border: none;
+	background-repeat: no-repeat;
+	transition: all 0.7s;
+}
+.trash-button:hover {
+	background: url(../assets/trash-hover.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.undo-button {
+	background: url(../assets/undo.svg);
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	margin-left: auto;
+	cursor: pointer;
+	border: none;
+	background-repeat: no-repeat;
+	transition: all 0.7s;
+}
+.undo-button:hover {
+	background: url(../assets/undo-hover.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.check-button:focus,
+.trash-button {
+	outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		margin: 0;
+	}
+
+	.wrapper .container {
+		width: 100%;
+	}
+
+	.list-item {
+		width: 90%;
+	}
+
+	.form {
+		width: 100%;
+	}
+}

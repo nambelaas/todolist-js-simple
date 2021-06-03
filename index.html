@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Todo List</h1>
+		</header>
+
+		<div class="wrapper">
+			<div class="container bg-white shadow">
+				<h2 class="container-header">Tambah kegiatan yang ingin dilakukan</h2>
+				<form action="#" class="form" id="form">
+					<div class="form-group form-title">
+						<label for="title">Nama Kegiatan</label>
+						<input type="text" id="title" name="title" required />
+					</div>
+					<div class="form-group form-title">
+						<label for="title">Tanggal</label>
+						<input type="date" id="date" name="date" required />
+					</div>
+					<input type="submit" name="Submit" value="Submit" class="btn-submit" />
+				</form>
+			</div>
+			<div class="container">
+				<h2 class="container-header">Yang harus dilakukan</h2>
+				<div class="list-item" id="todos"></div>
+			</div>
+			<div class="container">
+				<h2 class="container-header">Yang sudah dilakukan</h2>
+				<div class="list-item" id="completed-todos"></div>
+			</div>
+		</div>
+
+		<script src="js/dom.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
